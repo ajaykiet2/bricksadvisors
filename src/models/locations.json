@@ -1,0 +1,32 @@
+{ 
+    "locations":[
+        {
+            "name": "Noida",
+            "link": "/locations/noida"
+        },
+        {
+            "name": "Delhi",
+            "link": "/locations/delhi"
+        },
+        {
+            "name": "Gurgaon",
+            "link": "/locations/gurgaon"
+        },
+        {
+            "name": "Noida Extension",
+            "link": "/locations/noida-extension"
+        },
+        {
+            "name": "Greater Noida",
+            "link": "/locations/greater-noida"
+        },
+        {
+            "name": "Ghaziabad",
+            "link": "/locations/ghaziabad"
+        },
+        {
+            "name": "Dummy",
+            "link": "/locations/ghaziabad"
+        }
+    ]
+}

@@ -1,0 +1,287 @@
+{
+    "search":{
+        "filters": {
+            "total": 10
+        },
+        "properties":[
+            {
+                "id": 1,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/2bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 2,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/3bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 3,
+                "link": "product_detail.html",
+                "image": "/images/product/product-galaxy-note5.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 4,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/3bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 5,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/2bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 6,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/2bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 7,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/2bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 8,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/2bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 9,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/2bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 10,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/2bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 11,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/2bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            },
+            {
+                "id": 12,
+                "link": "product_detail.html",
+                "image": "/images/builders/projects/floorplans/2bhk.jpg",
+                "status": "FRESH",
+                "title": "2 BHK + 2 Toilet",
+                "area": "1230 SQFT",
+                "projectName": "Supertech Eco Village - II",
+                "price": "₹ 34 L",
+                "rates": "₹ 3,100/SQFT",
+                "location": "Greater Noida West (Noida Extension)"
+            }
+        ]
+    },
+    "trending_properties":[
+        {
+            "id": 1,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 2,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 3,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 4,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 5,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 6,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 7,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 8,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 9,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 10,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 11,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        },
+        {
+            "id": 12,
+            "link": "product_detail.html",
+            "image": "/images/builders/projects/floorplans/2bhk.jpg",
+            "status": "FRESH",
+            "title": "2 BHK + 2 Toilet",
+            "area": "1230 SQFT",
+            "projectName": "Supertech Eco Village - II",
+            "price": "₹ 34 L",
+            "rates": "₹ 3,100/SQFT"
+        }
+    ]
+}
