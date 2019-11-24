@@ -1,20 +1,7 @@
 import React from 'react'
-import Rating from '@material-ui/lab/Rating';
-import MaskInput from '../core/MaskInput'
 import { withStyles } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
-import Button from '@material-ui/core/Button';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
-import TextField from '@material-ui/core/TextField';
-import PersonIcon from '@material-ui/icons/Person';
-import FavoriteRoundedIcon from '@material-ui/icons/FavoriteRounded';
-import CompareRoundedIcon from '@material-ui/icons/CompareRounded';
-import PhoneInTalkRoundedIcon from '@material-ui/icons/PhoneInTalkRounded';
-import Typography from '@material-ui/core/Typography';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import MoreVertRoundedIcon from '@material-ui/icons/MoreVertRounded';
 import Skeleton from '@material-ui/lab/Skeleton';
 
 const styles = theme => ({
