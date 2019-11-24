@@ -3,7 +3,6 @@ import PropertyCard from './PropertyCard'
 import {Container} from '@material-ui/core'
 import {ToggleButton,ToggleButtonGroup} from '@material-ui/lab'
 import {Link} from 'react-router-dom'
-import Skeleton from '@material-ui/lab/Skeleton';
 
 class CategoryListing extends React.Component{
     render(){
