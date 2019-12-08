@@ -16,114 +16,155 @@ import SkeletonListTile from '../widgets/SkeletonListTile'
 
 // defining custom styles
 const styles = theme => ({
-    container: {
-        flexGrow: 1, 
-    },
-    loader:{
-        marginTop: theme.spacing(1)
-    },
-    sidebar: {
-        flexGrow: 1,
-        padding: theme.spacing(2),
-        backgroundColor: theme.palette.background.paper,
-    },
+    container: { flexGrow: 1},
     content:{
-        flexGrow: 1,
         backgroundColor: theme.palette.background.paper,
+        flexGrow: 1,
         padding: theme.spacing(3)
     },
     contentHeader:{
-        flexGrow: 1,
         backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing(1),
-        marginBottom: theme.spacing(1)
-    },
-    menu:{
-        padding: theme.spacing(1),
-        paddingLeft: theme.spacing(2),
-        paddingRight: theme.spacing(2),
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-    },
-    menuItem:{
-        display: 'flex',
-        justifyContent: 'end',
-        alignItems: 'center',
-    },
-    input: {
-        marginLeft: theme.spacing(1),
-        flex: 1,
-    },
-    iconButton: {
-        padding: 5,
+        flexGrow: 1,
+        marginBottom: theme.spacing(1),
+        padding: theme.spacing(1)
     },
     divider: {
         height: 28,
-        margin: 4,
-    },
-    nested: {
-        paddingLeft: theme.spacing(4),
-    },
-    margin:{
-        marginTop: theme.spacing(4),
+        margin: 4
     },
     gridWrapper: {
         display: 'flex',
-        justifyContent: 'space-between',
         flexWrap: 'wrap',
+        justifyContent: 'space-between',
     },
+    input: {
+        flex: 1,
+        marginLeft: theme.spacing(1)
+    },
+    iconButton: { padding: 5},
     listWrapper: {
         display: 'flex',
-        flexFlow: 'row',
         flexDirection: 'column',
-        alignItems: 'center'
+        flexFlow: 'row',
+        justifyContent: "start",
+    },
+    loader:{marginTop: theme.spacing(1)},
+    margin:{marginTop: theme.spacing(4)},
+    menu:{
+        alignItems: 'center',
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: theme.spacing(1),
+        paddingLeft: theme.spacing(2),
+        paddingRight: theme.spacing(2)
+    },
+    menuItem:{
+        alignItems: 'center',
+        display: 'flex',
+        justifyContent: 'end'
+    },
+    nested: {paddingLeft: theme.spacing(4)},
+    sidebar: {
+        backgroundColor: theme.palette.background.paper,
+        flexGrow: 1,
+        padding: theme.spacing(2)
     },
 });
 class SearchResult extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            /**
+             * Holds the request status
+             */
             loading: false,
+
+            /**
+             * Holds the status for infinite scroll
+             */
             hasMoreItems: true,
-            view: 'grid',
+
+            /**
+             * Contains the type of property tile {list|grid}
+             */
+            view: 'list',
+
+            /**
+             * Contains the array of properties
+             */
             properties:[]
         }
+
+        /**
+         * Binds methods with component
+         */
         this.handleChangeView = this.handleChangeView.bind(this);
         this.searchProperties = this.searchProperties.bind(this);
         this.loadMore = this.loadMore.bind(this);
     }
 
     componentDidMount() {
+        /**
+         * Searches the properties at render time
+         */
         this.searchProperties(queryToObject(this.props.location.search));
     }
 
     componentWillReceiveProps(props) {
+        /**
+         * Searches the properties if props change
+         */
         this.searchProperties(queryToObject(props.location.search));
     }
 
+    /**
+     * This method search the properties based on filters
+     * @method searchProperties
+     * @var {Object} filters
+     * @return {void}
+     */
     searchProperties(filters) {
         this.setState({loading: true});
         Property.search(filters).then(data => this.setState({properties:data.properties, loading:false}));
     }
 
+    /**
+     * This method loads more properties for infinite scroll
+     * @method loadMore
+     * @return {void}
+     */
     loadMore(){
         this.setState({loading: true});
-        Property.search(queryToObject(this.props.location.search))
-        .then(data => {
-            let properties = this.state.properties.concat(data.properties);
-            this.setState({properties,loading:false})
-        })
+        setTimeout(()=>{
+            Property.search(queryToObject(this.props.location.search))
+            .then(data => {
+                let properties = this.state.properties.concat(data.properties);
+                this.setState({properties,loading:false})
+            })
+        }, 2000);
     }
 
+    /**
+     * This method creates property cards for properties in state
+     * @return {void}
+     */
     renderCards() {
-        const { properties, view } = this.state;
+        const { properties, view, loading } = this.state;
 
         return properties.length 
             ? properties.map((property, i) => <ListTile key={i} view={view} data={property}/>)
-            :[1,2,3].map(idx=><SkeletonListTile key={idx}/>);
+            : (loading 
+                ? [1,2,3].map(idx=><SkeletonListTile key={idx}/>) 
+                : <div >
+                    No records found for the selection!
+                </div>
+            );
     }
 
+    /**
+     * This method toggle the rendering view
+     * @return {void}
+     */
     handleChangeView() {
         let view = this.state.view === 'list' ? 'grid' : 'list';
         this.setState({view});
@@ -182,7 +223,7 @@ class SearchResult extends React.Component {
                                         this.state.loading 
                                             ? <div className="progress">
                                                 <div className="indeterminate"></div>
-                                                </div>
+                                              </div>
                                             : ''
                                     }
                                     <div>
@@ -193,12 +234,9 @@ class SearchResult extends React.Component {
                         </Grid>
                     </Container>
                 </div>
-                
             </React.Fragment>
         )
     }
 }
 
-
-  
 export default withStyles(styles)(SearchResult);

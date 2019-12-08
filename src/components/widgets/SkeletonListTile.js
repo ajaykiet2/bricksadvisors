@@ -68,7 +68,7 @@ const styles = theme => ({
 });
 class SkeletonListTile extends React.Component {
     render(){
-        const { classes, data } = this.props;
+        const { classes } = this.props;
         return (
             <Card className={classes.card}>
                 <Skeleton

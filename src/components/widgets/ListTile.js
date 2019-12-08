@@ -1,24 +1,22 @@
 import React from 'react'
 import {withStyles} from '@material-ui/core'
 const styles = theme => ({
-    
     list: {
-        transition: 'width .2s',
-        flex: 'auto',
+        background: '#fff',
+        borderRadius: 4,
+        boxSizing: 'border-box',
+        boxShadow: '0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)',
         display: 'flex',
+        flex: 'auto',
         flexDirection: 'row',
         height: 200,
-        width: '100%',
-        position: 'relative',
-        boxSizing: 'border-box',
-        background: '#fff',
-        boxShadow: '0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)',
-        borderRadius: 4,
+        marginBottom: 8,
         overflow: 'hidden',
-        marginBottom: 8
+        position: 'relative',
+        transition: 'width .3s',
+        width: '100%'
     },
     grid: {
-        transition: 'width .2s',
         [theme.breakpoints.only('xs')]: {
             width: 'calc(50% - 8px)'
         },
@@ -31,6 +29,7 @@ const styles = theme => ({
         [theme.breakpoints.only('lg')]: {
             width: 'calc(25% - 8px)',
         },
+        transition: 'width .3s',
         position: 'relative',
         boxSizing: 'border-box',
         background: '#fff',
@@ -118,9 +117,13 @@ class ListTile extends React.Component {
                 </div>
                 <div className={classes.details}>
                     <div className={classes.title}>
-                        <a title={`${data.title} in ${data.location}`} href={data.link} className={classes.title} target="_BLANK">
-                            {`${data.title} in `} 
-                            <span className={classes.bold}>{data.location}</span>
+                        <a 
+                            title={`${data.title} in ${data.location}`} 
+                            href={data.link} 
+                            className={classes.title} 
+                            target="_BLANK"
+                        >
+                            {`${data.title} in `}<span className={classes.bold}>{data.location}</span>
                         </a>
                     </div>
                     <div className={classes.subtitle1}>
@@ -140,7 +143,6 @@ class ListTile extends React.Component {
                             <div className={classes.chipInfo}>{data.bathroom}</div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         );
