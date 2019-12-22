@@ -22,7 +22,7 @@ const styles = theme => ({
     
   },
   themeButton:{
-    backgroundImage:"linear-gradient(90deg,rgb(179, 40, 226), rgb(9, 197, 255))",
+    // backgroundImage:"linear-gradient(90deg,rgb(179, 40, 226), rgb(9, 197, 255))",
     boxShadow: "1px 2px 5px #555",    
   },
   directionUp: {},
